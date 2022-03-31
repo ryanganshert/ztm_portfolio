@@ -1,0 +1,39 @@
+<!DOCKTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link href="./static/main.3f6952e4.css" rel="stylesheet">
+    <!--<link href="./static/favicon.ico" rel="icon">-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='monkey.ico') }}">
+</head>
+<body>
+    <form method="POST"> <!--GET puts it in the browser, POST does not -->
+        First Name: <input type="text" name="first_name">
+        Last Name: <input type="text"  name="last_name"><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Password: <input type="password" name="password" min="8" required>
+        Confirm Password: <input type="password" name="password2" min="8" required><br><br>
+        Birthday: <input type="date" name="birth_date"><br>
+        Gender: <br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
+        Pets: <br>
+        <input type="checkbox" name="bird">Bird<br>
+        <input type="checkbox" name="cat">Cat<br>
+        <input type="checkbox" name="dog">Dog<br>
+        <input type="checkbox" name="fish">Fish<br>
+        <input type="checkbox" name="reptile">Reptile<br>
+        <input type="checkbox" name="other">Other<br>
+        Automobile: <br>
+        <select name="cars">
+            <option value="car">Car</option>
+            <option value="truck">Truck</option>
+            <option value="suv">SUV</option>
+        </select><br><br>
+        <input type="submit" value="Register!">
+        <input type="reset">
+    </form>
+    <script type="text/javascript" src="./static/main.70a66962.js"></script>
+</body>
+</html>
